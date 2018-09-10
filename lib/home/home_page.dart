@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
   final drawerItems = [
-    new DrawerItem("Fragment 1", Icons.rss_feed),
-    new DrawerItem("Fragment 2", Icons.local_pizza),
-    new DrawerItem("Fragment 3", Icons.info)
+    new DrawerItem("热门排行", Icons.rss_feed),
+    new DrawerItem("我的", Icons.near_me),
+    new DrawerItem("设置", Icons.settings)
   ];
 
   @override
@@ -62,13 +62,13 @@ class MainPageState extends State<MainPage> {
         child: new Column(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: new Text('User Name'),
-              accountEmail: new Text('email@example.com'),
+              accountName: new Text('Canv'),
+              accountEmail: new Text('wang.huabing@163.com'),
               currentAccountPicture:
-                  new CircleAvatar(backgroundImage: new AssetImage(_kAsset0)),
+                  new CircleAvatar(backgroundImage: new AssetImage("images/head.jpeg")),
               otherAccountsPictures: <Widget>[
-                new CircleAvatar(backgroundImage: new AssetImage(_kAsset1)),
-                new CircleAvatar(backgroundImage: new AssetImage(_kAsset2)),
+                new CircleAvatar(backgroundImage: new AssetImage("images/ic_share_qq.png")),
+                new CircleAvatar(backgroundImage: new AssetImage("images/ic_share_weixin.png")),
               ],
               onDetailsPressed: () {},
             ),
