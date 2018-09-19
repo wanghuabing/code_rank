@@ -1,6 +1,6 @@
-import 'package:code_rank/mine/my_home.dart';
-import 'package:code_rank/rank/rank_list.dart';
-import 'package:code_rank/setting/setting.dart';
+import 'package:code_rank/ui/mine/my_home.dart';
+import 'package:code_rank/ui/rank/rank_list.dart';
+import 'package:code_rank/ui/setting/setting.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {

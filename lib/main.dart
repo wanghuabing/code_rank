@@ -1,4 +1,4 @@
-import 'package:code_rank/home/home_page.dart';
+import 'package:code_rank/ui/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(new MyApp());

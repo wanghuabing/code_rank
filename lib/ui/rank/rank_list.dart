@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:code_rank/model/rank_data.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -69,11 +69,13 @@ class _RankPageState  extends State<RankPage>{
   }
 
   loadData() async {
-    String dataURL = "https://jsonplaceholder.typicode.com/posts";
+    String dataURL = "https://api.github.com/search/repositories?q=language:java&sort=stars";
     http.Response response = await http.get(dataURL);
-    setState(() {
-      widgets = json.decode(response.body);
-    });
+    final jsonResponse = json.decode(response.body);
+    RankData data = new RankData.fromJson(jsonResponse);
+//    setState(() {
+//      widgets = json.decode(response.body);
+//    });
   }
 
 
