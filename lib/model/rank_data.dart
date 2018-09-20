@@ -1,7 +1,7 @@
 import 'package:code_rank/model/rank_project.dart';
 
 class RankData {
-  BigInt total_count;
+  int total_count;
   bool incomplete_results;
   List<RankProject> items;
 
