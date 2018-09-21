@@ -29,7 +29,7 @@ class RankPage extends StatelessWidget {
   ListView getListView(List<RankProject> items) => new ListView.builder(
       itemCount: items.length,
       itemBuilder: (BuildContext context, int position) {
-        return new ProjectRow(items[position]);
+        return new ProjectRow(items[position] as RankProject);
       });
 
   Future<RankData> fetchRankProjects() async {
