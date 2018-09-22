@@ -22,7 +22,9 @@ class RankPage extends StatelessWidget {
               }
 
               // By default, show a loading spinner
-              return new CircularProgressIndicator();
+              return new Center(
+                child: new CircularProgressIndicator(),
+              );
             }));
   }
 
